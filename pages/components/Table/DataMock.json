@@ -1,0 +1,79 @@
+{
+    "columns": [
+      {
+        "header": "Codigo",
+        "key": "codigo",
+        "sortable": true,
+        "align": "left"
+      },
+      {
+        "header": "Data",
+        "key": "fechamento",
+        "sortable": true,
+        "align": "left"
+      },
+      {
+        "header": "Total",
+        "key": "total",
+        "sortable": true,
+        "align": "right"
+      },
+      {
+        "header": "Ações",
+        "key": "actions",
+        "sortable": true,
+        "align": "center"
+      }
+    ],
+    "data": [
+      {
+        "id": 543511,
+        "codigo": "129937",
+        "fechamento": "Lunes, Marzo 1, 2020",
+        "total": "RD $106.75",
+        "actions": "Ver Detalhes 1"
+      },
+      {
+        "id": 123423,
+        "codigo": "129938",
+        "fechamento": "Martes, Marzo 2, 2020",
+        "total": "RD $10.75",
+        "actions": "Ver Detalhes 2"
+      },
+      {
+        "id": 234321,
+        "codigo": "129939",
+        "fechamento": "Miércoles, Marzo 3, 2020",
+        "total": "RD $10.75",
+        "actions": "Ver Detalhes 3"
+      },
+      {
+        "id": 15432,
+        "codigo": "129940",
+        "fechamento": "Jueves, Marzo 4, 2020",
+        "total": "RD $10.75",
+        "actions": "Ver Detalhes 4"
+      },
+      {
+        "id": 234231,
+        "codigo": "129941",
+        "fechamento": "Viernes, Marzo 5, 2020",
+        "total": "RD $10.75",
+        "actions": "Ver Detalhes 5"
+      },
+      {
+        "id": 11243,
+        "codigo": "129942",
+        "fechamento": "Sábado, Marzo 6, 2020",
+        "total": "RD $10.75",
+        "actions": "Ver Detalhes 6"
+      },
+      {
+        "id": 11233,
+        "codigo": "129943",
+        "fechamento": "Domingo, Marzo 7, 2020",
+        "total": "RD $10.75",
+        "actions": "Ver Detalhes 7"
+      }
+    ]
+  }

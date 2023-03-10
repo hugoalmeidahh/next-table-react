@@ -2,10 +2,13 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Table from './components/Table/Table'
+import DataJson from './components/Table/DataMock.json'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const {columns, data} = DataJson
   return (
     <>
       <Head>
@@ -17,8 +20,8 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
           <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.tsx</code>
+            Table&nbsp;
+            <code className={styles.code}>components/Table/Table.tsx</code>
           </p>
           <div>
             <a
@@ -34,29 +37,13 @@ export default function Home() {
                 width={100}
                 height={24}
                 priority
-              />
-            </a>
+              /> 
+              </a>
           </div>
         </div>
 
         <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
+          <Table columns={columns} data={data} multipleSelecion={true}></Table> 
         </div>
 
         <div className={styles.grid}>
@@ -67,10 +54,10 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
+            Hugo <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
+              {/* Find in-depth information about Next.js features and&nbsp;API. */}
             </p>
           </a>
 
@@ -81,10 +68,10 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
+              Github <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
+              {/* Learn about Next.js in an interactive course with&nbsp;quizzes! */}
             </p>
           </a>
 
@@ -95,10 +82,10 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
+              Notion <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
+              {/* Discover and deploy boilerplate example Next.js&nbsp;projects. */}
             </p>
           </a>
 
@@ -112,8 +99,8 @@ export default function Home() {
               Deploy <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
+              {/* Instantly deploy your Next.js site to a shareable URL */}
+              {/* with&nbsp;Vercel. */}
             </p>
           </a>
         </div>
